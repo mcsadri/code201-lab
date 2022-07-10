@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+    
+        <title>Lab: Class 01b</title>
+    
+        <style>
+            h1{
+                color:white;
+                background-color:#393D47;
+            }
+            footer p{
+                color:white;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <header></header>
+
+        <main>
+
+            <h1>Class 1 Lab</h1>
+
+            <script>
+                // get user's first name
+                let userName = prompt('What\'s your first name?');
+                console.log("userName = " + userName);
+                document.write("<p style=\"color:#FAE3BF;background-color:#005BAD;\">Hi, " + userName + "!</p>");
+                // get user's favorite ice cream flavor
+                let userFlavor = prompt('What\'s your favorite flavor of ice cream, ' + userName + '?');
+                console.log("userFlavor = " + userFlavor);
+                document.write("<p style=\"color:#E6FAAC;background-color:#7802AD;\">" + userName + " likes " + userFlavor + " ice cream.</p>");
+                // get user's favorite ice cream topping
+                let userTopping = prompt('What\'s your favorite topping with ' + userFlavor + ' ice cream?');
+                console.log("userTopping = " + userTopping);
+                document.write("<p style=\"color:#B3F9C4;background-color:#AD000A;\">" + userName + " likes their " + userFlavor + " ice cream topped with " + userTopping + ".</p>");
+                // user's preference for Cup vs Cone
+                let userVessel = prompt(userName + ', do you prefer your ice cream in a Cup or Cone?');
+                console.log("userVessel = " + userVessel);
+                alert(`${userName} likes ${userFlavor} ice cream with ${userTopping} in a ${userVessel}`);
+                document.write("<p style=\"color:white;background-color:black;\">" + userName + " likes their " + userFlavor + " ice cream with " + userTopping + " served in a " + userVessel + ".</p>");
+            </script>
+
+        </main>
+        
+        <footer>
+            <p>A footer without any content is just an empty shoe.</p>
+        </footer>
+
+    </body>
+
+</html>
